@@ -18,7 +18,7 @@
  *  10. intro
  *  11. about
  *  12. resume
- *  13. portfolio
+ *  13. projects
  *  14. call-to-action section
  *  15. services
  *  16. stats ✅
@@ -1227,31 +1227,30 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #1c2018;
-	opacity: .25;
+	background: linear-gradient(to top, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.2) 100%);
 }
 
 .intro-content {
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	top: -150px;
-	text-align: center;
-	-webkit-transform: translateY(-2.1rem);
-	-ms-transform: translateY(-2.1rem);
-	transform: translateY(-2.1rem);
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	width: 90%;
+    max-width: 1200px;
 }
 .intro-content h1 {
 	color: #FFFFFF;
 	font-family: "poppins-medium", sans-serif;
 	font-size: 8.4rem;
 	line-height: 1.071;
-	max-width: 900px;
+	max-width: 100%;
 	margin-top: 0;
 	margin-bottom: .6rem;
 	margin-left: auto;
 	margin-right: auto;
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	white-space: nowrap;
+	text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 .intro-content h5 {
 	color: #cc005f;
@@ -1261,7 +1260,7 @@ body {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 .intro-content .intro-position {
 	font-family: "lora-regular", serif;
@@ -1270,7 +1269,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	color: #FFFFFF;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 .intro-content .intro-position span {
 	display: inline-block;
@@ -1295,7 +1294,7 @@ body {
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
-	margin-top: .6rem;
+	margin-top: 2rem;
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
@@ -1320,7 +1319,7 @@ body {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	bottom: 7.2rem;
+	bottom: 5%;
 	font-size: 3.3rem;
 	margin: 0;
 	padding: 0;
@@ -1560,10 +1559,15 @@ body {
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	.intro-info {
-		margin-right: 0;
-		margin-left: 0;
-	}
+    .intro-content h1 {
+        font-size: 6rem;
+    }
+    .intro-content h5 {
+        font-size: 1.8rem;
+    }
+    .intro-content .intro-position {
+        font-size: 1.5rem;
+    }
 }
 @media only screen and (max-width:768px) {
 	.intro-info img {
@@ -1588,20 +1592,31 @@ body {
 	}
 }
 @media only screen and (max-width:600px) {
-	.intro-info {
-		text-align: center;
-		margin-top: 3rem;
-	}
-	.intro-info img {
-		height: 6.6rem;
-		width: 6.6rem;
-		float: none;
-		display: inline-block;
-	}
-	.intro-info .lead {
-		padding-left: 0;
-		text-align: center;
-	}
+    .intro-content {
+        width: 95%;
+    }
+    .intro-content h1 {
+        font-size: 4.6rem;
+    }
+    .intro-content h5 {
+        font-size: 1.5rem;
+    }
+    .intro-content .intro-position {
+        font-size: 1.2rem;
+    }
+    .intro-content .button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+    .intro-social {
+        font-size: 2.2rem;
+        bottom: 5%;
+    }
+    .intro-social li {
+        margin: 0 8px;
+    }
 }
 
 /** 
@@ -1775,21 +1790,21 @@ body {
 
 /** 
  * ===================================================================
- * 13. portfolio - (_layout.scss)
+ * 13. projects - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
-#portfolio {
+#projects {
 	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 }
-#portfolio .folio-item {
+#projects .project-item {
 	padding: 0;
 	position: relative;
 	overflow: hidden;
 }
-#portfolio .folio-item img {
+#projects .project-item img {
 	vertical-align: middle;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -1798,7 +1813,7 @@ body {
 	transition: all 0.5s ease-in-out;
 }
 
-#portfolio .overlay {
+#projects .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1812,12 +1827,12 @@ body {
 	transition: all 0.5s ease-in-out;
 }
 
-#portfolio .folio-item-table {
+#projects .project-item-table {
 	display: table;
 	width: 100%;
 	height: 100%;
 }
-#portfolio .folio-item-cell {
+#projects .project-item-cell {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -1830,13 +1845,13 @@ body {
 	left: -100%;
 }
 
-#portfolio .folio-title {
+#projects .project-title {
 	color: #FFFFFF;
 	font-size: 3.3rem;
 	padding: 0 3rem;
 	margin-bottom: 0;
 }
-#portfolio .folio-types {
+#projects .project-types {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -1845,13 +1860,13 @@ body {
 	letter-spacing: .1rem;
 	color: rgba(255, 255, 255, 0.6);
 }
-#portfolio .folio-item:hover .overlay {
+#projects .project-item:hover .overlay {
 	background: rgba(0, 0, 0, 0.8);
 }
-#portfolio .folio-item:hover .folio-item-cell {
+#projects .project-item:hover .project-item-cell {
 	left: 0;
 }
-#portfolio .folio-item:hover img {
+#projects .project-item:hover img {
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
@@ -1859,21 +1874,21 @@ body {
 
 /**
  * responsive:
- * portfolio
+ * projects
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	#portfolio .folio-title {
+	#projects .project-title {
 		font-size: 3.1rem;
 	}
 }
 @media only screen and (max-width:768px) {
-	#portfolio .folio-title {
+	#projects .project-title {
 		font-size: 2.5rem;
 	}
 }
 @media only screen and (max-width:400px) {
-	#portfolio .folio-title {
+	#projects .project-title {
 		font-size: 2.2rem;
 	}
 }
