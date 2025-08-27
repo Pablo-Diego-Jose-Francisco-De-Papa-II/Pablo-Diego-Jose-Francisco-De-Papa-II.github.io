@@ -1135,7 +1135,7 @@ header.scrolled {
     clear: none;
     display: flex !important;
     align-items: center;
-    gap: 2.5rem;
+    gap: 4rem;
 }
 .main-navigation > li {
     display: inline-block;
@@ -1183,7 +1183,7 @@ header.scrolled {
         margin: 0;
     }
     .main-navigation li a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 0.3rem 0.6rem;
     }
 }
@@ -1878,7 +1878,7 @@ header.scrolled {
  * ------------------------------------------------------------------
  */
 .popup-modal {
-	max-width: 550px;
+	max-width: 900px;
 	background: #FFFFFF;
 	position: relative;
 	margin: 0 auto;
