@@ -14,7 +14,7 @@
  *  06. buttons 
  *  07. other components
  *  08. common styles
- *  09. header styles
+ *  09. header styles ✅
  *  10. intro ✅
  *  11. about ✅
  *  12. resume
@@ -1113,7 +1113,6 @@ header.scrolled {
     backdrop-filter: none;
     box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
-
 #main-nav-wrap {
     display: flex;
     justify-content: center;
@@ -1167,7 +1166,6 @@ header.scrolled {
 
 @media only screen and (max-width: 768px) {
     header .row,
-    header .top-bar,
     #main-nav-wrap,
     .main-navigation {
         flex-direction: row !important;
@@ -1187,9 +1185,6 @@ header.scrolled {
     .main-navigation li a {
         font-size: 1.2rem;
         padding: 0.3rem 0.6rem;
-    }
-    body {
-        padding-top: 70px;
     }
 }
 
@@ -1665,7 +1660,7 @@ header.scrolled {
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
+	width: 40%;
 	padding-right: 90px;
 	text-align: right;
 }
@@ -2022,7 +2017,7 @@ header.scrolled {
 	text-align: center;
 }
 #cta p.lead {
-	color: #6e6e6e;
+	color: #ff0000;
 }
 .cta-content {
 	max-width: 640px;
@@ -2050,17 +2045,17 @@ header.scrolled {
 	display: block;
 	height: 3px;
 	width: 80px;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(255, 0, 0, 0.2);
 	position: absolute;
 	left: 50%;
 	bottom: 0;
 	margin-left: -40px;
 }
 .section-ads h2 a, .section-ads h2 a:visited {
-	color: #313131;
+	color: #ff0000;
 }
 .section-ads span {
-	color: #3F0D39;
+	color: #ff00e1;
 }
 
 /**
