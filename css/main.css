@@ -2411,4 +2411,30 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
+#lang-button {
+  position: absolute;
+  top: 20px;       /* rovnaká výška ako hlavné menu */
+  right: 40px;     /* odsadenie od pravého okraja */
+  z-index: 1000;
+}
+
+#lang-button a {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  font-family: "poppins-semibold", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+#lang-button a:hover {
+  background: #FF0077;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255,0,119,0.2);
+}
+
+
 /*# sourceMappingURL=main.css.map */
