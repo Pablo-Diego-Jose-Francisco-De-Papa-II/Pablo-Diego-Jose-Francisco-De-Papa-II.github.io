@@ -2379,61 +2379,56 @@ footer .copyright span:last-child::after {
  * ------------------------------------------------------------------- 
  */
 #go-top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 600;
-	display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 600;
+  display: none;
 }
+
 #go-top a {
-	text-decoration: none;
-	border: 0 none;
-	display: block;
-	height: 6.6rem;
-	width: 6rem;
-	line-height: 6.6rem;
-	text-align: center;
-	background: #cc005f;
-	color: #FFFFFF;
-	text-align: center;
-	text-transform: uppercase;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-#go-top a i {
-	font-size: 1.6rem;
-	line-height: inherit;
-}
-#go-top a:hover {
-	background: #000000;
-}
-
-#lang-button {
-  position: absolute;
-  top: 20px;       /* rovnaká výška ako hlavné menu */
-  right: 40px;     /* odsadenie od pravého okraja */
-  z-index: 1000;
-}
-
-#lang-button a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #cc005f;
   color: #fff;
-  padding: 0.5rem 1rem;
-  font-size: 1.6rem;
-  font-family: "poppins-semibold", sans-serif;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: background 0.3s ease, color 0.3s ease;
-  border-radius: 4px;
 }
 
-#lang-button a:hover {
-  background: #FF0077;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(255,0,119,0.2);
+#go-top a:hover {
+  background: #000;
+  transform: translateY(-4px);
+}
+
+#go-top a i {
+  font-size: 20px;
+}
+
+.language-switch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 1.4rem;
+}
+
+.language-switch a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.language-switch a:hover {
+    background: #FF0077;
+    color: #fff;
 }
 
 
