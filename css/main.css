@@ -2409,27 +2409,52 @@ footer .copyright span:last-child::after {
   font-size: 20px;
 }
 
-.language-switch {
-    position: absolute;
-    top: 10px;
+/**
+ * language toggle - (_layout.scss)
+ * ------------------------------------------------------------------- 
+ */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
     right: 20px;
-    font-family: "poppins-semibold", sans-serif;
-    font-size: 1.4rem;
+    z-index: 1001;
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0 1.5rem;
+    border-radius: 20px;
+    background: rgba(28, 32, 24, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
 }
 
-.language-switch a {
+.lang-toggle a {
     color: #fff;
     text-decoration: none;
-    margin: 0 5px;
-    padding: 4px 8px;
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 1.6rem;
+    margin: 0 6px;
+    padding: 6px 10px;
     border-radius: 6px;
     transition: background 0.2s, color 0.2s;
 }
 
-.language-switch a:hover {
+.lang-toggle a:hover {
     background: #FF0077;
     color: #fff;
 }
 
+@media only screen and (max-width: 1320px) {
+    .mobile-lang-toggle {
+        display: inline-block;
+    }
+    .lang-toggle {
+        display: none;
+    }
+}
 
 /*# sourceMappingURL=main.css.map */
